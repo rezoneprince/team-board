@@ -1,6 +1,7 @@
 /* google font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-/* common style or utilitis*/
+
+/* common style or utilitis start*/
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #F3F1FF;
@@ -26,6 +27,8 @@ hr{
 a{
     text-decoration: none;
 }
+/* common style or utilitis finish*/
+
 /* top players style */
  .section-title{
     color: #562EFF;
@@ -125,4 +128,43 @@ a{
     color: #FF4A60;
     font-weight:500;
     background-color: #FFE4E8;
+}
+
+/* media quries */
+
+/* mobile devices */
+@media only screen and (max-width:688px) {
+
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+   .course{
+        margin-bottom: 30px;
+   }
+    .player{
+        flex-direction: column;
+    }
+}
+
+/* tablets devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .course{
+        margin-bottom: 15px;
+    }
+    .middle{
+        justify-content: center;
+    }
 }
